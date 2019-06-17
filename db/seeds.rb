@@ -8,11 +8,22 @@
 # 	})
 # end
 
-250.times do
-	Review.create({
-		name: Faker::Name.name,
-		rating: Faker::Number.between(1,5),
-		title: Faker::Book.title,
-		description: Faker::Lorem.sentence
-	})
-end
+# 250.times do
+# 	Review.create({
+# 		name: Faker::Name.name,
+# 		rating: Faker::Number.between(1,5),
+# 		title: Faker::Book.title,
+# 		description: Faker::Lorem.sentence
+# 	})
+# end
+
+# 500.times do
+# 	Book.create({
+# 		book_name: Faker::Book.title,
+# 		short_description: Faker::Lorem.sentence,
+# 		long_description: Faker::Lorem.sentence,
+# 		book_chapter: Faker::Lorem.word,
+# 		publication_date: Faker::Date.between(2.days.ago, Date.today),
+# 		genre: Faker::Book.genre 
+# 	})
+# end
