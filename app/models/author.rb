@@ -1,4 +1,7 @@
 class Author < ApplicationRecord
+
+  # Association 
+  has_many :books
   
   # validation
   validates_presence_of :name, :author_bio, :academics, :awards, :profile_pic
