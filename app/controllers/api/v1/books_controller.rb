@@ -13,7 +13,7 @@ module Api
 				# render json: {status: 'SUCCESS', message:'Loaded books', data:@books},status: :ok
 			end
 
-			## api :GET, 'http://localhost:3001/api/v1/books/get_all_data_by_book_name?name=Pietro Graham', "List of all books."
+			## api :GET, 'http://localhost:3001/api/v1/books/get_all_data_by_author_name?name=Pietro Graham', "List of all books."
 			## param :name, String, :required => false, :desc => "Author name, sending the request as url params"
 
 			## => Fetch data from all three table based on author name

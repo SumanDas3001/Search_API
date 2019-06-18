@@ -11,6 +11,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'jbuilder'
 
+## Use devise gem for authentication 
+gem 'devise'
+
 # Use paperclip for image upload
 gem "paperclip"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
