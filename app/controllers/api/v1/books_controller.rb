@@ -12,6 +12,11 @@ module Api
 				@books = @books.by_book_name(params[:book_name]).order("created_at DESC") if params[:book_name].present?
 				# render json: {status: 'SUCCESS', message:'Loaded books', data:@books},status: :ok
 			end
+
+			def get_all_data_by_book_name
+				@all_data = Author.order("created_at DESC")
+				@all_data = @all_data.by_author_name(params[:name]).order("created_at DESC") if params[:name].present?
+			end
 		end
 	end
 end

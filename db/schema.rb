@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_17_095323) do
+ActiveRecord::Schema.define(version: 2019_06_18_081249) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_06_17_095323) do
     t.string "profile_pic_content_type"
     t.bigint "profile_pic_file_size"
     t.datetime "profile_pic_updated_at"
+    t.integer "book_id"
   end
 
   create_table "books", force: :cascade do |t|
@@ -37,6 +38,7 @@ ActiveRecord::Schema.define(version: 2019_06_17_095323) do
     t.string "genre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "author_id"
   end
 
   create_table "reviews", force: :cascade do |t|

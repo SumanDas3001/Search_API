@@ -4,7 +4,7 @@
 # 		author_bio: Faker::Lorem.sentence,
 # 		academics: Faker::Lorem.sentence,
 # 		awards: Faker::Lorem.sentence,
-# 		profile_pic: File.open(File.join(Rails.root, "app/assets/images/image.jpg"))
+# 		profile_pic: File.open(File.join(Rails.root, "app/assets/images/image.jpg")),
 # 	})
 # end
 
@@ -13,7 +13,8 @@
 # 		name: Faker::Name.name,
 # 		rating: Faker::Number.between(1,5),
 # 		title: Faker::Book.title,
-# 		description: Faker::Lorem.sentence
+# 		description: Faker::Lorem.sentence,
+#       book_id: Faker::Number.between(1,500)         
 # 	})
 # end
 
@@ -24,6 +25,7 @@
 # 		long_description: Faker::Lorem.sentence,
 # 		book_chapter: Faker::Lorem.word,
 # 		publication_date: Faker::Date.between(2.days.ago, Date.today),
-# 		genre: Faker::Book.genre 
+# 		genre: Faker::Book.genre
+#       author_id: Faker::Number.between(1,100)
 # 	})
 # end
