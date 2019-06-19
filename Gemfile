@@ -14,6 +14,9 @@ gem 'jbuilder'
 ## Use devise gem for authentication 
 gem 'devise'
 
+## Use simple_token_authentication for token based authentication
+gem 'simple_token_authentication', '~> 1.0' 
+
 # Use paperclip for image upload
 gem "paperclip"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
